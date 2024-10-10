@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VTYSProjeDataSet1" targetNamespace="http://tempuri.org/VTYSProjeDataSet1.xsd" xmlns:mstns="http://tempuri.org/VTYSProjeDataSet1.xsd" xmlns="http://tempuri.org/VTYSProjeDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VTYSProjeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VTYSProjeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.VTYSProje.Properties.Settings.GlobalReference.Default.VTYSProjeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AsistanlariminItirazlariTableAdapter" GeneratorDataComponentClassName="AsistanlariminItirazlariTableAdapter" Name="AsistanlariminItirazlari" UserDataComponentName="AsistanlariminItirazlariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VTYSProjeConnectionString (Settings)" DbObjectName="VTYSProje.dbo.AsistanlariminItirazlari" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Asistan Sicili], [Asistanın Adı], [Asistanın Soyadı], [İtiraz Açıklaması], [İtiraza Konu Ay], [Verdiğim Cevap], ItirazID FROM dbo.AsistanlariminItirazlari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Asistan Sicili" DataSetColumn="Asistan Sicili" />
+              <Mapping SourceColumn="Asistanın Adı" DataSetColumn="Asistanın Adı" />
+              <Mapping SourceColumn="Asistanın Soyadı" DataSetColumn="Asistanın Soyadı" />
+              <Mapping SourceColumn="İtiraz Açıklaması" DataSetColumn="İtiraz Açıklaması" />
+              <Mapping SourceColumn="İtiraza Konu Ay" DataSetColumn="İtiraza Konu Ay" />
+              <Mapping SourceColumn="Verdiğim Cevap" DataSetColumn="Verdiğim Cevap" />
+              <Mapping SourceColumn="ItirazID" DataSetColumn="ItirazID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VTYSProjeDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="VTYSProjeDataSet1" msprop:Generator_DataSetName="VTYSProjeDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AsistanlariminItirazlari" msprop:Generator_RowEvHandlerName="AsistanlariminItirazlariRowChangeEventHandler" msprop:Generator_RowDeletedName="AsistanlariminItirazlariRowDeleted" msprop:Generator_RowDeletingName="AsistanlariminItirazlariRowDeleting" msprop:Generator_RowEvArgName="AsistanlariminItirazlariRowChangeEvent" msprop:Generator_TablePropName="AsistanlariminItirazlari" msprop:Generator_RowChangedName="AsistanlariminItirazlariRowChanged" msprop:Generator_RowChangingName="AsistanlariminItirazlariRowChanging" msprop:Generator_TableClassName="AsistanlariminItirazlariDataTable" msprop:Generator_RowClassName="AsistanlariminItirazlariRow" msprop:Generator_TableVarName="tableAsistanlariminItirazlari" msprop:Generator_UserTableName="AsistanlariminItirazlari">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Asistan_x0020_Sicili" msprop:Generator_ColumnPropNameInRow="Asistan_Sicili" msprop:Generator_ColumnPropNameInTable="Asistan_SiciliColumn" msprop:Generator_ColumnVarNameInTable="columnAsistan_Sicili" msprop:Generator_UserColumnName="Asistan Sicili" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Asistanın_x0020_Adı" msprop:Generator_ColumnPropNameInRow="Asistanın_Adı" msprop:Generator_ColumnPropNameInTable="Asistanın_AdıColumn" msprop:Generator_ColumnVarNameInTable="columnAsistanın_Adı" msprop:Generator_UserColumnName="Asistanın Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Asistanın_x0020_Soyadı" msprop:Generator_ColumnPropNameInRow="Asistanın_Soyadı" msprop:Generator_ColumnPropNameInTable="Asistanın_SoyadıColumn" msprop:Generator_ColumnVarNameInTable="columnAsistanın_Soyadı" msprop:Generator_UserColumnName="Asistanın Soyadı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İtiraz_x0020_Açıklaması" msprop:Generator_ColumnPropNameInRow="İtiraz_Açıklaması" msprop:Generator_ColumnPropNameInTable="İtiraz_AçıklamasıColumn" msprop:Generator_ColumnVarNameInTable="columnİtiraz_Açıklaması" msprop:Generator_UserColumnName="İtiraz Açıklaması" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="İtiraza_x0020_Konu_x0020_Ay" msprop:Generator_ColumnPropNameInRow="İtiraza_Konu_Ay" msprop:Generator_ColumnPropNameInTable="İtiraza_Konu_AyColumn" msprop:Generator_ColumnVarNameInTable="columnİtiraza_Konu_Ay" msprop:Generator_UserColumnName="İtiraza Konu Ay" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Verdiğim_x0020_Cevap" msprop:Generator_ColumnPropNameInRow="Verdiğim_Cevap" msprop:Generator_ColumnPropNameInTable="Verdiğim_CevapColumn" msprop:Generator_ColumnVarNameInTable="columnVerdiğim_Cevap" msprop:Generator_UserColumnName="Verdiğim Cevap" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItirazID" msprop:Generator_ColumnPropNameInRow="ItirazID" msprop:Generator_ColumnPropNameInTable="ItirazIDColumn" msprop:Generator_ColumnVarNameInTable="columnItirazID" msprop:Generator_UserColumnName="ItirazID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AsistanlariminItirazlari" />
+      <xs:field xpath="mstns:ItirazID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
